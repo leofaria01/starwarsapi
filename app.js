@@ -45,13 +45,13 @@ function updateInfo(data){
     if(data.name == 'Yoda'){
         image.src = 'img/Yodar.png'
     }
-    if(data.name == 'Luke Skywalker'){
+    if(data.name == 'Luke Skywalker'){ //apiUrl == 'https://swapi.dev/api/people/1/'
         image.src = 'img/Luke-Skywalker.png'
     }
         if(data.name == "Darth Vader"){ //apiUrl == 'https://swapi.dev/api/people/4/'
         image.src = 'img/dart-vader.png'
     }
-    if(data.name == "Grievous"){ //apiUrl == 'https://swapi.dev/api/people/4/'
+    if(data.name == "Grievous"){ 
         image.src = 'img/grievous.png'
     }
     if(data.name == "C-3PO"){ 
