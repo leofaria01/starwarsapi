@@ -1,0 +1,57 @@
+body{background-image: url("img/death-star-background-v2.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:rgb(230, 250, 49); 
+    font:normal 15pt Arial; 
+    align-content: center;}
+    #title{text-align: center; margin-top: 30px;}
+
+    .info-container{text-align: center;
+        box-shadow: 5px 5px 10px rgb(20, 20, 20); 
+        border: 2px solid yellow ;
+        background: transparent; 
+        color: rgb(145, 160, 15); 
+        width: 400px !important;
+         height: 400px; 
+         padding: 15px; 
+         margin: auto;
+   border-radius: 50px;}
+
+   p{color: whitesmoke;}
+
+   button{
+    color: whitesmoke;
+    width: 350px;
+    text-align: center;
+    padding: 15px 20px;
+    border: 1px solid yellow;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 18px;
+      
+   }
+   
+   .result{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+   }
+   .botao{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+   }
+
+   img#imagem{
+    position: absolute;
+    z-index: 999;
+    margin: -350px;
+    margin-left: 5px;
+    
+   }

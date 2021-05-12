@@ -1,0 +1,152 @@
+<html lang="en">
+   <head>
+
+   <meta charset="UTF-8">
+    
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+  
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1"> 
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700">
+  <link rel="stylesheet" href="footerstar.css">
+  <link rel="stylesheet" href="footerstar.css" media="screen and (max-width: 600px)" />
+  <!--
+  <BGSOUND SRC="starwars.wav" loop="-1"></BGSOUND>
+  <EMBED SRC="starwars.wav" AUTOSTART= LOOP="TRUE" WIDTH=75 HEIGHT=45>
+    -->
+    <title>Star Wars API</title>
+    
+   <!-- 
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700">
+   -->
+    
+    <script>
+    window.console = window.console || function(t) {};
+  </script>
+  
+    
+    
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  </head>
+  
+  <body translate="no" class="main">
+    
+  <div id="playwindow" class="small">
+     <div class="embed">
+        <div class="logo">
+           <img src="./img/star_wars_logo.png" class="logo">
+           <!--https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/everybodyeditslogolarge.png-->
+        </div>
+     </div>
+  </div>
+  <div class="info-container">
+         <div id="personagem"> <h1 id="nome">Yoda</h1></div>
+    <p id="gender">Sexo: Masculino</p>
+    <p id="height">Altura: 66</p>
+    <p id="hair_color">Cor do Cabelo: Branco</p>
+    <p id="birth_year">Aniversário: 896BBY</p>
+    <p id="mass">Peso: 17</p>
+    <p id="species">Espécie: ??????</p>
+    <p id="homeworld">Origem: Vamos ver</p>
+    
+    
+    <div id="imgYoda">
+        <img id="imagemYoda" src="img/Yodar.png"></div>
+    </div>
+    <div id="result" class="result">
+    <button type="button" id="button" name="button">Saiba mais sobre os personagens</button>
+    </div>
+  <div id="social">
+     <a href="https://www.facebook.com/leonardo.faria.967/" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+     <a href="https://twitter.com/leovasconcelos1/" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
+     <a href="https://www.youtube.com/channel/UCpfOuuCOt0PJcUgnf_4sbLA/" target="_blank" class="fa fa-youtube-play" aria-hidden="true"></a>
+     <a href="https://www.instagram.com/leofaria001/?hl=pt-br" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+     <a href="https://github.com/leofaria01" target="_blank" class="fa fa-github" aria-hidden="true"></a>
+  </div>
+  <div id="thanks" class="light padded shadow">
+      <div class="container">
+        <h2>
+        Obrigado!
+        </h2>
+        <p>
+          The Everybody Edits staff would like to give you a huge thanks! Your support helps keep the game up and running. Without users who are willing to support the game we would not be able to keep the game alive. Don't worry, we're not going to use your payment to buy new shoes! All of the money users spend to buy items in Everybody Edits, is put right back into the game! So again, thank you very much, your support is appreciated by many.
+        </p>
+        <br>
+        <p>
+          See you in the worlds,
+          <br>
+          dO mORE(+) Staff
+        </p>
+      </div>
+    </div>
+  <div id="footer">
+     <div class="cont">
+        <div class="left">
+           <p class="title">Links</p>
+           <p><a href="/help">Páginas</a></p>
+           <p><a href="/rules">Rule List</a></p>
+           <p><a href="/faq">FAQs</a></p>
+           <p><a href="#">Download App</a></p>
+           <!--http://r.playerio.com/r/everybody-edits-su9rn58o40itdbnw69plyw/EverybodyEdits.exe-->
+        </div>
+        <div class="center">
+           <p class="title">Coisas que gosto</p>
+           <p><a href="#">Player.IO</a></p>
+           <p><a href="#">Profile Stats</a></p>
+           <p><a href="#">Wiki</a></p>
+           <p><a href="#">????</a></p>
+        </div>
+        <div class="right">
+           <p class="title">Páginas Sociais</p>
+           <p><a href="https://www.facebook.com/leonardo.faria.967/">Facebook</a></p>
+           <p><a href="https://twitter.com/leovasconcelos1/">Twitter</a></p>
+           <p><a href="https://www.youtube.com/channel/UCpfOuuCOt0PJcUgnf_4sbLA/">Youtube - Yes, I Play </a></p>
+           <p><a href="https://github.com/leofaria01">GitHub</a></p>
+           <p><a href="https://www.instagram.com/leofaria001/?hl=pt-br/">instagram</a></p>
+        </div>
+     </div>
+  </div>
+         <!-- 
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+          
+          
+          <script type="text/javascript" src="https://playerio-a.akamaihd.net/everybody-edits-su9rn58o40itdbnw69plyw/Everybody%20Edits%20Website/js/blogfeed.js"></script><script src="https://www.google.com/uds/?file=feeds&amp;v=1" type="text/javascript"></script><link href="https://www.google.com/uds/api/feeds/1.0/482f2817cdf8982edf2e5669f9e3a627/default+en.css" type="text/css" rel="stylesheet" class="--apng-checked"><script src="https://www.google.com/uds/api/feeds/1.0/482f2817cdf8982edf2e5669f9e3a627/default+en.I.js" type="text/javascript"></script>
+          <script type="text/javascript" src="https://playerio-a.akamaihd.net/everybody-edits-su9rn58o40itdbnw69plyw/Everybody%20Edits%20Website/js/background.js"></script>
+ <script src="https://playerio-a.akamaihd.net/everybody-edits-su9rn58o40itdbnw69plyw/Everybody%20Edits%20Website/js/background.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <script src="https://playerio-a.akamaihd.net/everybody-edits-su9rn58o40itdbnw69plyw/Everybody%20Edits%20Website/js/blogfeed.js"></script>  
+-->
+     
+  
+    
+  
+  <script src="https://www.google.com/uds/?file=feeds&amp;v=1"></script>
+  <script src="https://www.google.com/uds/api/feeds/1.0/482f2817cdf8982edf2e5669f9e3a627/default+en.css"></script>
+  <script src="https://www.google.com/uds/api/feeds/1.0/482f2817cdf8982edf2e5669f9e3a627/default+en.I.js"></script>
+  
+    
+  <script src="app.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js "></script>
+   
+  
+   <audio controls>
+    <source src="Guerra_nas_Estrelas.mp3" type="audio/mpeg" loop="true" autostart="true">
+    
+    </audio>
+  
+   
+  </body></html>
