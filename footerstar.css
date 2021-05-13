@@ -220,6 +220,15 @@
     font-family: "Lato", sans-serif !important;
    }
    
+   button:hover {background-color: #FBBF2C}
+
+  button:active {
+  background-color: #181818;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
    .result{
     align-items: center;
     display: flex;
