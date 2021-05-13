@@ -196,6 +196,8 @@
     justify-content: center;
     flex-direction: column !important;
     text-shadow: 0.1em 0.1em 0.05em #000;
+    margin-top: 5px;
+    margin-bottom: 1px;
    }
    .info-container p{
     align-items: center;
