@@ -224,7 +224,7 @@
 
   button:active {
   background-color: #181818;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 3px #000;
   transform: translateY(4px);
 }
 
