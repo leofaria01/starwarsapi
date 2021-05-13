@@ -91,7 +91,7 @@ function updateInfo(data){
         image.src = 'img/Quigon.png'
     }
     if(data.name == "Obi-Wan Kenobi"){ 
-        image.src = 'img/obi-wan-Kenobi.png'
+        image.src = 'img/obi-wan-kenobi.png'
     }
     if(data.name == "Padmé Amidala"){ 
         image.src = 'img/Padmeamidala.png'
