@@ -32,9 +32,9 @@ function getInfo(){
 
 function updateInfo(data){
     nome.innerText = data.name  
-    gender.innerText     = 'SEXO: ' +  data.gender
-    height.innerText     = 'ALTURA : ' + data.height
-    hair_color.innerText = 'COR DE CABELO: ' + data.hair_color
+    gender.innerText     = `SEXO: ${data.gender}` //+  data.gender
+    height.innerText     = `ALTURA : ${data.height}` //+ data.height
+    hair_color.innerText = `COR DE CABELO: ${data.hair_color}`// + data.hair_color
     birth_year.innerText = 'IDADE: ' + data.birth_year
     mass.innerText       = 'PESO: ' + data.mass
     especie.innerText    = 'ESPÉCIE: ' + data.species
