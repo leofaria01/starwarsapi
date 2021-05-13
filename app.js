@@ -158,6 +158,6 @@ function updateInfor(dados){
           // origem.innerText     = 'ORIGEM: ' + dados.name 
       
 } //}
-button.addEventListener('click',getInfo,updateImage,getPlanet)
+button.addEventListener('click',getInfo,getPlanet)
 //document.getElementById("button").addEventListener("click", getInfo)
 
