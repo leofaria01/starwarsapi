@@ -25,7 +25,7 @@ function getInfo(){
         //updateInfo(response.homeworld)
         //updateInfo(response.species)
         //updateImage(response.data.name)
-        console.log(randomNumber)
+        //console.log(randomNumber)
     })
    
 }
