@@ -10,38 +10,34 @@ let image       = document.querySelector('#imagemYoda')
 let button2     = document.querySelector('#button2')
 let especie     = document.querySelector('#species') 
 let origem      = document.querySelector('#homeworld')
-let fundo       = document.querySelector('.body')
+//let fundo       = document.querySelector('.body')
 
 
 
 function getInfo(){
+    //gera um número randômico
     let randomNumber = Math.floor((Math.random() * 88) + 1)
-    //var rand = randomNumber.length;
-    let apiUrl = 'https://swapi.dev/api/people/' +  randomNumber
-   // let apiUrl = 'https://swapi.dev/api/planets/' +  randomNumber
-     // let cont = randomNumber.length 
+    //passa o número randomico para o final da url de busca
+    let apiUrl = 'http://swapi.dev/api/people/' +  randomNumber
+   //biblioteca ajax/axios para pegar os dados (response.data)     
     axios.get(apiUrl).then(function(response){
         updateInfo(response.data)
-        //updateInfo(response.homeworld)
-        //updateInfo(response.species)
-        //updateImage(response.data.name)
-        //console.log(randomNumber)
+        
     })
    
 }
-
+//atualiza os campos do formulario  
 function updateInfo(data){
     nome.innerText = data.name  
-    gender.innerText     = `SEXO: ${data.gender}` //+  data.gender
-    height.innerText     = `ALTURA : ${data.height}` //+ data.height
-    hair_color.innerText = `COR DE CABELO: ${data.hair_color}`// + data.hair_color
+    gender.innerText     = `SEXO: ${data.gender}` //+  data.gender - data são todos os dados e gender é referente ao objeto jason
+    height.innerText     = `ALTURA : ${data.height}` 
+    hair_color.innerText = `COR DE CABELO: ${data.hair_color}`
     birth_year.innerText = 'IDADE: ' + data.birth_year
     mass.innerText       = 'PESO: ' + data.mass
     especie.innerText    = 'ESPÉCIE: ' + data.species
     origem.innerText     = 'ORIGEM: ' + data.homeworld 
-     //(result.name)     //[0][data.name] //[1].name
-    
-       
+     
+     //inserir imagem baseado no data.name retornado  
     if(data.name == 'Yoda'){
         image.src = 'img/Yodar.png'
     }
@@ -120,13 +116,32 @@ function updateInfo(data){
     if(data.name == "R4-P17"){ 
         image.src = 'img/R4-P17-red.png'
     }
-    //if(randomNumber === [1]){
-     //   especie.innerText = 'ESPÉCIE: Humano' 
-    // }
-   getPlanet() 
-  
-   
+       /** busca raça - bem manual - se tiver alguma sugestão de melhoria será bem vinda*/
+       //esta buscando apenas a api de pessoas  que retorna uma url com array de especies 
+       if(data.species == 'http://swapi.dev/api/species/1/'){
+        especie.innerText    = 'ESPÉCIE: Humano'
+     }
+     if(data.species == 'http://swapi.dev/api/species/2/'){
+        especie.innerText    = 'ESPÉCIE: Androide'
+     }
+     if(data.species == 'http://swapi.dev/api/species/22/'){
+        especie.innerText    = 'ESPÉCIE: Zabrak' //Zabrak
+     }
+
+     /*planetas*/ 
+     if(data.homeworld == 'http://swapi.dev/api/planets/1/'){
+        origem.innerText     = 'PLANETA: Tatooine'
+     }
+     if(data.homeworld == 'http://swapi.dev/api/planets/2/'){
+        origem.innerText     = 'PLANETA: Alderaan'
+     }
+     if(data.homeworld == 'http://swapi.dev/api/planets/36/'){
+        origem.innerText     = 'PLANETA: Dathomir'
+     }
 }
+
+
+/* ignore todo este código. Sao ideias que não funcionaram. :(
 function updateImage(){  
  if(data.name == 'Luke Skywalker'){
  image.src = 'img/luke-skywalker-v1.png'
@@ -145,7 +160,7 @@ function getPlanet(){
     //let apiUrl = 'https://swapi.dev/api/people/' +  randomNumber
     //getInfo()
     
-    let apiUrl = 'https://swapi.dev/api/planets/' + randomNum// + cont
+    let apiUrl = 'https://swapi.dev/api/planets/'+[]// + cont
         axios.get(apiUrl).then(function(response){
         updateInfor(response.dados)
        // data.homeworld     =    dados.name
@@ -158,6 +173,7 @@ function updateInfor(dados){
           // origem.innerText     = 'ORIGEM: ' + dados.name 
       
 } //}
+*/
 button.addEventListener('click',getInfo,getPlanet)
 //document.getElementById("button").addEventListener("click", getInfo)
 
