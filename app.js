@@ -174,6 +174,6 @@ function updateInfor(dados){
       
 } //}
 */
-button.addEventListener('click',getInfo,getPlanet)
+button.addEventListener('click',getInfo)
 //document.getElementById("button").addEventListener("click", getInfo)
 
